@@ -34,8 +34,8 @@ public class User implements UserDetails {
     //Need to have a one-to-many relationship
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+    public Collection<Authority> getAuthorities() {
+        return authorities;
     }
 
     @Override
